@@ -2,8 +2,7 @@
 //  ViewController.swift
 //  Xylophone
 //
-//  Created by Angela Yu on 28/06/2019.
-//  Copyright © 2019 The App Brewery. All rights reserved.
+//  Created by Adwait Barkale on 28/07/2020.
 //
 
 import UIKit
