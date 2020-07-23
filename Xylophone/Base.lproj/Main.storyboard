@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.15"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-        <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -22,17 +21,20 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cwq-Gl-Ulr" userLabel="C Key">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
                                         <subviews>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFM-uT-A7s">
+                                            <button tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFM-uT-A7s">
                                                 <rect key="frame" x="5" y="0.0" width="404" height="110"/>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="systemRedColor"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="C">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="enn-JQ-Ayy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="DFM-uT-A7s" firstAttribute="top" secondItem="Cwq-Gl-Ulr" secondAttribute="top" id="2O1-S1-kog"/>
                                             <constraint firstItem="DFM-uT-A7s" firstAttribute="leading" secondItem="Cwq-Gl-Ulr" secondAttribute="leading" constant="5" id="BwY-oB-ACN"/>
@@ -45,15 +47,18 @@
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHC-RX-B1m">
                                                 <rect key="frame" x="10" y="0.0" width="394" height="110"/>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="systemOrangeColor"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="D">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UNx-37-Nof"/>
+                                                </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="rHC-RX-B1m" firstAttribute="leading" secondItem="0TK-zm-so9" secondAttribute="leading" constant="10" id="7oZ-E2-mrw"/>
                                             <constraint firstItem="rHC-RX-B1m" firstAttribute="top" secondItem="0TK-zm-so9" secondAttribute="top" id="Ays-ox-Hbv"/>
@@ -66,15 +71,18 @@
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17i-mB-C7b">
                                                 <rect key="frame" x="15" y="0.0" width="384" height="110"/>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="systemYellowColor"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="E">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E1V-My-nrP"/>
+                                                </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="17i-mB-C7b" secondAttribute="trailing" constant="15" id="5SY-GO-uwF"/>
                                             <constraint firstItem="17i-mB-C7b" firstAttribute="leading" secondItem="OTr-02-0W0" secondAttribute="leading" constant="15" id="H3e-n9-h9G"/>
@@ -87,15 +95,18 @@
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EP7-FS-goB">
                                                 <rect key="frame" x="25" y="0.0" width="364" height="110"/>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="systemGreenColor"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="F">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lg9-k9-QpY"/>
+                                                </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="EP7-FS-goB" firstAttribute="top" secondItem="dQA-PY-cf0" secondAttribute="top" id="0KH-JY-abA"/>
                                             <constraint firstItem="EP7-FS-goB" firstAttribute="leading" secondItem="dQA-PY-cf0" secondAttribute="leading" constant="25" id="KuH-Fe-BMJ"/>
@@ -108,15 +119,18 @@
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGF-P9-kNM">
                                                 <rect key="frame" x="30" y="0.0" width="354" height="110"/>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="systemIndigoColor"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="G">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLv-xf-bVw"/>
+                                                </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="MGF-P9-kNM" firstAttribute="top" secondItem="Niv-y7-pXZ" secondAttribute="top" id="3Ff-aW-P0j"/>
                                             <constraint firstAttribute="trailing" secondItem="MGF-P9-kNM" secondAttribute="trailing" constant="30" id="Jrk-RH-gPQ"/>
@@ -129,15 +143,18 @@
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tAp-m4-27O">
                                                 <rect key="frame" x="35" y="0.0" width="344" height="110"/>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="systemBlueColor"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="A">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KeZ-rH-6az"/>
+                                                </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="tAp-m4-27O" secondAttribute="bottom" id="CbZ-UM-nmf"/>
                                             <constraint firstAttribute="trailing" secondItem="tAp-m4-27O" secondAttribute="trailing" constant="35" id="EqS-EC-VHO"/>
@@ -150,15 +167,18 @@
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rx-6i-ssp">
                                                 <rect key="frame" x="40" y="0.0" width="334" height="110"/>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="systemPurpleColor"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="B">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DB6-0O-vhF"/>
+                                                </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="9rx-6i-ssp" secondAttribute="bottom" id="G6P-9j-pBt"/>
                                             <constraint firstAttribute="trailing" secondItem="9rx-6i-ssp" secondAttribute="trailing" constant="40" id="TlA-xg-sMu"/>
@@ -169,7 +189,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="HLG-TK-TT6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3Jf-FR-vOM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HLG-TK-TT6" secondAttribute="trailing" id="Ngx-0k-yTe"/>
@@ -182,6 +202,173 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
+        </scene>
+        <!--Practice View Controller-->
+        <scene sceneID="cUR-7z-B66">
+            <objects>
+                <viewController id="us8-En-zgD" userLabel="Practice View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EpO-YU-nEI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zgC-fg-vna">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rps-ZP-4ez">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="112.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ig-h1-XLT">
+                                                <rect key="frame" x="5" y="0.0" width="404" height="112.5"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="C">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="3Ig-h1-XLT" secondAttribute="bottom" id="726-Jf-Pry"/>
+                                            <constraint firstAttribute="trailing" secondItem="3Ig-h1-XLT" secondAttribute="trailing" constant="5" id="GyE-j2-Swa"/>
+                                            <constraint firstItem="3Ig-h1-XLT" firstAttribute="top" secondItem="rps-ZP-4ez" secondAttribute="top" id="flD-NR-Erv"/>
+                                            <constraint firstItem="3Ig-h1-XLT" firstAttribute="leading" secondItem="rps-ZP-4ez" secondAttribute="leading" constant="5" id="sAh-We-Tae"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dLO-LM-QVt">
+                                        <rect key="frame" x="0.0" y="117.5" width="414" height="112.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQL-DL-AX6">
+                                                <rect key="frame" x="10" y="0.0" width="394" height="112.5"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="D">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="RQL-DL-AX6" firstAttribute="top" secondItem="dLO-LM-QVt" secondAttribute="top" id="2fO-Bk-0jq"/>
+                                            <constraint firstAttribute="trailing" secondItem="RQL-DL-AX6" secondAttribute="trailing" constant="10" id="CNC-25-3rm"/>
+                                            <constraint firstAttribute="bottom" secondItem="RQL-DL-AX6" secondAttribute="bottom" id="UVZ-VG-oz8"/>
+                                            <constraint firstItem="RQL-DL-AX6" firstAttribute="leading" secondItem="dLO-LM-QVt" secondAttribute="leading" constant="10" id="m5t-wb-7wx"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Icx-Ql-Ssk">
+                                        <rect key="frame" x="0.0" y="235" width="414" height="112.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afL-oO-tUZ">
+                                                <rect key="frame" x="15" y="0.0" width="384" height="112.5"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="E">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="afL-oO-tUZ" firstAttribute="top" secondItem="Icx-Ql-Ssk" secondAttribute="top" id="3TB-pp-ZDs"/>
+                                            <constraint firstAttribute="trailing" secondItem="afL-oO-tUZ" secondAttribute="trailing" constant="15" id="9MI-YB-Qz5"/>
+                                            <constraint firstAttribute="bottom" secondItem="afL-oO-tUZ" secondAttribute="bottom" id="DmY-1R-1kG"/>
+                                            <constraint firstItem="afL-oO-tUZ" firstAttribute="leading" secondItem="Icx-Ql-Ssk" secondAttribute="leading" constant="15" id="QHR-px-UML"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vnj-Re-I5N">
+                                        <rect key="frame" x="0.0" y="352.5" width="414" height="113"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYQ-CE-e1u">
+                                                <rect key="frame" x="20" y="0.0" width="374" height="113"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="F">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="cYQ-CE-e1u" secondAttribute="trailing" constant="20" id="42S-Ua-iuf"/>
+                                            <constraint firstItem="cYQ-CE-e1u" firstAttribute="top" secondItem="Vnj-Re-I5N" secondAttribute="top" id="Mtj-J5-W3y"/>
+                                            <constraint firstAttribute="bottom" secondItem="cYQ-CE-e1u" secondAttribute="bottom" id="hmQ-E2-88m"/>
+                                            <constraint firstItem="cYQ-CE-e1u" firstAttribute="leading" secondItem="Vnj-Re-I5N" secondAttribute="leading" constant="20" id="xeV-a7-hjG"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBc-Qd-qqg">
+                                        <rect key="frame" x="0.0" y="470.5" width="414" height="112.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zv0-Cg-L6G">
+                                                <rect key="frame" x="25" y="0.0" width="364" height="112.5"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="G">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="zv0-Cg-L6G" secondAttribute="bottom" id="33u-GJ-zI3"/>
+                                            <constraint firstItem="zv0-Cg-L6G" firstAttribute="leading" secondItem="ZBc-Qd-qqg" secondAttribute="leading" constant="25" id="6dT-w2-zDK"/>
+                                            <constraint firstAttribute="trailing" secondItem="zv0-Cg-L6G" secondAttribute="trailing" constant="25" id="7Ov-nY-ogB"/>
+                                            <constraint firstItem="zv0-Cg-L6G" firstAttribute="top" secondItem="ZBc-Qd-qqg" secondAttribute="top" id="jmt-wd-7T0"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQl-Kd-jBS">
+                                        <rect key="frame" x="0.0" y="588" width="414" height="112.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAA-LD-dCw">
+                                                <rect key="frame" x="30" y="0.0" width="354" height="112.5"/>
+                                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="A">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ZAA-LD-dCw" secondAttribute="trailing" constant="30" id="6bS-3k-97t"/>
+                                            <constraint firstItem="ZAA-LD-dCw" firstAttribute="top" secondItem="dQl-Kd-jBS" secondAttribute="top" id="Nhd-oG-KfQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZAA-LD-dCw" secondAttribute="bottom" id="Qg9-mI-hde"/>
+                                            <constraint firstItem="ZAA-LD-dCw" firstAttribute="leading" secondItem="dQl-Kd-jBS" secondAttribute="leading" constant="30" id="wAF-4v-QMz"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oNx-2z-5s1">
+                                        <rect key="frame" x="0.0" y="705.5" width="414" height="112.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mfr-SA-3Qc">
+                                                <rect key="frame" x="35" y="0.0" width="344" height="112.5"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="B">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Mfr-SA-3Qc" secondAttribute="trailing" constant="35" id="15r-vR-egZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="Mfr-SA-3Qc" secondAttribute="bottom" id="8jR-OL-cIT"/>
+                                            <constraint firstItem="Mfr-SA-3Qc" firstAttribute="top" secondItem="oNx-2z-5s1" secondAttribute="top" id="DQW-uZ-nN6"/>
+                                            <constraint firstItem="Mfr-SA-3Qc" firstAttribute="leading" secondItem="oNx-2z-5s1" secondAttribute="leading" constant="35" id="EWH-GX-KD0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oLv-if-q4B" firstAttribute="trailing" secondItem="zgC-fg-vna" secondAttribute="trailing" id="8eB-T1-JaS"/>
+                            <constraint firstItem="oLv-if-q4B" firstAttribute="bottom" secondItem="zgC-fg-vna" secondAttribute="bottom" id="Qyu-fg-Ck6"/>
+                            <constraint firstItem="zgC-fg-vna" firstAttribute="top" secondItem="oLv-if-q4B" secondAttribute="top" id="i4s-hN-wIS"/>
+                            <constraint firstItem="zgC-fg-vna" firstAttribute="leading" secondItem="oLv-if-q4B" secondAttribute="leading" id="lUi-pp-N4T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oLv-if-q4B"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oKu-Xk-MCZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="864"/>
         </scene>
     </scenes>
 </document>
